@@ -52,3 +52,5 @@ will receive a response:
     "total_stargazers": 0
 }
 ```
+## Possible expansion
+The app has much potential for expansion, including but not limited to further information about user's public repos and about users themselves.
