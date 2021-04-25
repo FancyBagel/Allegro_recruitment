@@ -1,8 +1,9 @@
 # Allegro_recruitment
 My entry for Task 3 of Allegro Summer Experience Software Engineer Intern recruitment process.
 ## Technologies
-*Python version 3.8.5
-*Flask version 1.1.2
+* Python version 3.8.5
+* Flask version 1.1.2
+* Waitress version 2.0.0
 ## Installation
 After downloading the repo, install required packages by running the following command in project's main folder:
 ```
