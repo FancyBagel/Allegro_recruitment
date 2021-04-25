@@ -3,7 +3,7 @@ My entry for Task 3 of Allegro Summer Experience Software Engineer Intern recrui
 ## Technologies
 *Python version 3.8.5
 *Flask version 1.1.2
-##Installation
+## Installation
 After downloading the repo, install required packages by running the following command in project's main folder:
 ```
 $ pip3 install -r requirements.txt
