@@ -12,7 +12,9 @@ def index():
 
 @app.route("/repo-list", methods=['GET'])
 def form_example():
-    username = request.form.get('username')
+    username = request.args.get('username')
+    print("WHAT")
+    print(username)
 
     page_iter = 1
     star_sum = 0
@@ -22,11 +24,13 @@ def form_example():
 
     while True:
         github_url = 'https://api.github.com/users/{}/repos?page={}'.format(username, page_iter)
+        print(github_url)
         page_iter += 1
         resp = requests.get(github_url)
         data = json.loads(resp.text)
+        print(data)
         if 'message' in data:
-            if data['message'] == 'Not found':
+            if data['message'] == 'Not Found':
                 return jsonify(message="User not found")
             return jsonify(message="GitHub API malfunction occured")
         ##print(data['message'])
